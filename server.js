@@ -4,7 +4,7 @@ const app = express();
 const db = require("./app/models");
 db.sequelize.sync();
 var corsOptions = {
-  origin: "https://datapiper-db.herokuapp.com/"
+  origin: "https://datapiper-db.herokuapp.com"
 };
 app.use(cors(corsOptions));
 // parse requests of content-type - application/json
